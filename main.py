@@ -12,6 +12,7 @@ Lng = 106.9
 url= "https://api.openweathermap.org/data/2.5/forecast?"
 data_count = 8
 parameters = {"lat": Lat , "lon": Lng, "cnt":data_count, "appid": api_key}
+send_data = ""
 
 try:
     response = requests.get(url=url, params=parameters)
